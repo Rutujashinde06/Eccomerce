@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block 'main' %}
+<div class="conatiner">
+    <div class="row">
+        <div class="col-md-6 mt-5 mx-auto">
+            <h4>User Registration form</h4>
+            <form method="POST" action="">
+                {% csrf_token %}
+                <table>
+                    {{mform}}
+                    <tr>
+                        <td><input type="submit" value="create"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock 'main' %}
